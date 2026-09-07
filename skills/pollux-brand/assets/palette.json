@@ -1,0 +1,48 @@
+{
+  "$schema": "polluxdata brand tokens v1",
+  "meta": {
+    "name": "PolluxData",
+    "version": "1.0.0",
+    "mascot": "Pollux (anthropomorphic cream schnauzer, Wayfarer sunglasses)",
+    "glifo": "8-point nautical star with inscribed circle"
+  },
+  "core": {
+    "brand.primary": "#F07A1F",
+    "brand.primary-dark": "#D94A38",
+    "brand.primary-light": "#FF9B3D",
+    "brand.star": "#F05A24",
+    "mascot.red": "#C8102E",
+    "mascot.neon-red": "#FF1E2D",
+    "mascot.fur": "#F2EFE7",
+    "status.online": "#31D887"
+  },
+  "dark_cinematic": {
+    "dark.bg": "#06111F",
+    "dark.bg-2": "#071A2D",
+    "dark.bg-blue": "#0B2F55",
+    "dark.text-primary": "#FFFFFF",
+    "dark.text-body": "#FFFFFFB8",
+    "dark.text-muted": "#A9B0BD"
+  },
+  "paper_mode": {
+    "paper.bg": "#FFFFFF",
+    "paper.bg-soft": "#F6F7FB",
+    "paper.heading": "#06111F",
+    "paper.body": "#5B6573",
+    "paper.muted": "#A9B0BD",
+    "paper.dark-text": "#C8D4E6",
+    "paper.accent": "#F07A1F",
+    "paper.navy-band": "#06111F"
+  },
+  "partners": {
+    "oracle": { "primary": "#E8112D", "neon": "#FF1E2D" },
+    "azure": { "primary": "#0078D4", "neon": "#3AA0FF" },
+    "aws": { "primary": "#FF9900" }
+  },
+  "typography": {
+    "heading": { "family": "Manrope", "fallbacks": ["Inter", "Arial"] },
+    "body": { "family": "Inter", "fallbacks": ["system-ui", "Arial"] },
+    "mono": { "family": "SF Mono", "fallbacks": ["Fira Code", "monospace"] },
+    "serif_tribute_only": { "family": "Playfair Display", "fallbacks": ["Georgia", "serif"] }
+  }
+}

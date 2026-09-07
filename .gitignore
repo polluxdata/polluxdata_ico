@@ -1,0 +1,7 @@
+# staging de descargas — no publicar (los assets finales viven en skills/)
+brand-assets-raw/
+
+# sistema
+.DS_Store
+__pycache__/
+*.pyc

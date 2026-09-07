@@ -1,0 +1,17 @@
+{
+  "name": "PolluxData Skills",
+  "description": "PolluxData brand system and commercial document skills",
+  "owner": "polluxdata",
+  "skills": [
+    {
+      "name": "pollux-brand",
+      "path": "skills/pollux-brand",
+      "description": "Applies PolluxData's official brand system (colors, typography, logo, mascot Pollux, tone of voice) to any artifact."
+    },
+    {
+      "name": "pollux-docs",
+      "path": "skills/pollux-docs",
+      "description": "Generates PolluxData commercial documents (offers, proposals, proformas, presentations) with consistent structure and brand styling."
+    }
+  ]
+}
