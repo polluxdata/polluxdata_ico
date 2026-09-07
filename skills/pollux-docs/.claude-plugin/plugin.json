@@ -1,0 +1,6 @@
+{
+  "name": "pollux-docs",
+  "description": "Generates PolluxData commercial documents (offers, proformas, presentations, assessments, support plans, case studies, closures, follow-up emails) with consistent structure and brand styling.",
+  "version": "1.1.0",
+  "author": { "name": "PolluxData", "url": "https://polluxdata.com" }
+}

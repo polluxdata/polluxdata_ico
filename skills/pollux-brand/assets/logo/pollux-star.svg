@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-label="Isotipo PolluxData">
+  <g stroke="#F05A24" stroke-width="2.6" stroke-linecap="round">
+    <line x1="50" y1="4" x2="50" y2="96"/>
+    <line x1="4" y1="50" x2="96" y2="50"/>
+    <line x1="17.5" y1="17.5" x2="82.5" y2="82.5"/>
+    <line x1="82.5" y1="17.5" x2="17.5" y2="82.5"/>
+  </g>
+  <circle cx="50" cy="50" r="22" stroke="#F05A24" stroke-width="2.6"/>
+</svg>

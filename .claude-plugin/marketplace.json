@@ -1,0 +1,18 @@
+{
+  "name": "polluxdata-brand-skills",
+  "owner": { "name": "PolluxData", "url": "https://polluxdata.com" },
+  "plugins": [
+    {
+      "name": "pollux-brand",
+      "source": "skills/pollux-brand",
+      "description": "Look & feel PolluxData: colores, tipografía, logo, mascota Pollux, tono de voz y modos visuales.",
+      "version": "1.1.0"
+    },
+    {
+      "name": "pollux-docs",
+      "source": "skills/pollux-docs",
+      "description": "Documentos comerciales PolluxData con estructura y marca: oferta, proforma, presentación, ficha de servicio, assessment, plan de soporte, caso de éxito, cierre y email.",
+      "version": "1.1.0"
+    }
+  ]
+}
