@@ -10,7 +10,7 @@ Lista de documentos que PolluxData debe tener como plantilla, por prioridad:
 |---|---|---|---|---|
 | ✅ Hecha | Oferta / propuesta | `references/offer.md` | PDF / DOCX | Estructura completa, modo Paper |
 | ✅ Hecha | Proforma | `references/proforma.md` | PDF | Transaccional 1 página, banda compacta, sin prosa comercial |
-| ⬜ Pendiente | Presentación comercial | `references/presentation.md` | PPTX | Portada Dark cinematic con Pollux, interior Paper mode, slides de partner reutilizables (OCI/AWS/Azure) |
+| ✅ Hecha | Presentación comercial | `references/presentation.md` | PPTX | 8 slides: portada dark con mascota, interior Paper mode, cierre CTA |
 | ⬜ Pendiente | Ficha de servicio (one-pager) | `references/service-sheet.md` | PDF | Una página por servicio (migración OCI, FinOps, etc.), formato deck de venta rápida |
 | ⬜ Pendiente | Informe de assessment | `references/assessment.md` | PDF | Auditoría cloud inicial: hallazgos, riesgos, recomendaciones, roadmap |
 | ⬜ Pendiente | Propuesta de soporte mensual | `references/support-plan.md` | PDF | Planes de soporte gestionado, SLAs, matriz de horas |
@@ -26,6 +26,8 @@ Lista de documentos que PolluxData debe tener como plantilla, por prioridad:
 - [ ] Crear versiones SVG del logo (wordmark e isotipo) — ahora solo hay PNG pequeños
 - [ ] Validación CI: lint de SKILL.md (frontmatter válido), JSON schemas, chequeo de que toda reference nueva está listada en el `SKILL.md` y en este roadmap
 - [ ] Ampliar catálogo de la mascota: poses catalogadas con nombre (`pollux-thumbs-up`, `pollux-pointing`, `pollux-thinking`) y regla de uso de cada una
+- [ ] Decidir política de color en portadas con mascota: aceptar el rojo de la escena partner (Oracle) como acento justificado o regenerar escena en navy/naranja
+- [ ] Fuentes corregidas y sincronizadas; si se cambian, re-ejecutar el fix de name tables (Manrope-ExtraLight bug del instancer) y re-instalar en LibreOffice (`Resources/fonts/truetype`)
 - [ ] Asset de mascota "modo Paper": variante con fondo navy `#06111F` o transparente, sin escena de partner (los assets actuales llevan la escena roja/neón incrustada, no apta para bandas de documentos) — pendiente de generar
 - [ ] Logo en alta resolución: SVG (wordmark + isotipo) o PNG @2x — el PNG actual de 218px se ve pixelado en portadas A4
 - [ ] Recrear el logo SVG fiel al original si no se dispone del vector fuente
