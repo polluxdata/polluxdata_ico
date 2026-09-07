@@ -26,6 +26,9 @@ Lista de documentos que PolluxData debe tener como plantilla, por prioridad:
 - [ ] Crear versiones SVG del logo (wordmark e isotipo) — ahora solo hay PNG pequeños
 - [ ] Validación CI: lint de SKILL.md (frontmatter válido), JSON schemas, chequeo de que toda reference nueva está listada en el `SKILL.md` y en este roadmap
 - [ ] Ampliar catálogo de la mascota: poses catalogadas con nombre (`pollux-thumbs-up`, `pollux-pointing`, `pollux-thinking`) y regla de uso de cada una
+- [ ] Asset de mascota "modo Paper": variante con fondo navy `#06111F` o transparente, sin escena de partner (los assets actuales llevan la escena roja/neón incrustada, no apta para bandas de documentos) — pendiente de generar
+- [ ] Logo en alta resolución: SVG (wordmark + isotipo) o PNG @2x — el PNG actual de 218px se ve pixelado en portadas A4
+- [ ] Recrear el logo SVG fiel al original si no se dispone del vector fuente
 - [ ] Versionado de marca: `CHANGELOG.md` en `pollux-brand` — cualquier cambio de token pasa por ahí
 
 ## 3. Distribución

@@ -1,0 +1,52 @@
+{
+  "ref": "OF-2026-042",
+  "date": "2026-09-07",
+  "client": {
+    "company": "Importadora Andes Cía. Ltda.",
+    "contact": "María Fernández",
+    "role": "Gerente de TI"
+  },
+  "project_title": "Migración de cargas de trabajo a Oracle Cloud Infrastructure",
+  "partner": "oracle",
+  "executive_summary": "Importadora Andes necesita mover sus sistemas críticos a una infraestructura moderna sin detener la operación. Proponemos una migración a Oracle Cloud Infrastructure en tres fases, con corte controlado, alta disponibilidad y transferencia de conocimiento a su equipo. Al terminar, sus plataformas operan en OCI con costes predecibles y una base lista para escalar.",
+  "context": "La operación actual depende de servidores on-premise con más de seis años de antigüedad, respaldos manuales y un riesgo creciente de indisponibilidad. El crecimiento del catálogo online exige una plataforma elástica, segura y monitoreada. OCI ofrece el rendimiento que las cargas de datos necesitan con un modelo de costes controlado.",
+  "goals": [
+    "Reducir el riesgo de caídas del ERP y de la tienda online",
+    "Migrar tres cargas críticas a OCI sin pérdida de datos",
+    "Habilitar respaldos automáticos y monitoreo continuo",
+    "Capacitar al equipo interno para la operación diaria"
+  ],
+  "scope_in": [
+    "Assessment técnico y plan de migración detallado",
+    "Migración de 3 cargas de trabajo: ERP, tienda online y reporting",
+    "Configuración de alta disponibilidad en la región seleccionada",
+    "Automatización de respaldos y monitoreo básico",
+    "Transferencia de conocimiento al equipo de TI"
+  ],
+  "scope_out": [
+    "Refactorización de aplicaciones",
+    "Licenciamiento de software de terceros",
+    "Soporte gestionado 24/7 (disponible como plan aparte)",
+    "Migración de datos históricos de archivo"
+  ],
+  "phases": [
+    { "deliverable": "Assessment e informe técnico + plan de corte", "duration": "2 semanas" },
+    { "deliverable": "Tienda online operando en OCI (piloto)", "duration": "3 semanas" },
+    { "deliverable": "ERP y reporting en producción + handover", "duration": "4 semanas" }
+  ],
+  "pricing": [
+    { "item": "Assessment técnico y plan de migración", "unit": "servicio", "qty": 1, "unit_price": 2500.00 },
+    { "item": "Migración de cargas de trabajo a OCI", "unit": "workload", "qty": 3, "unit_price": 3200.00 },
+    { "item": "Configuración de alta disponibilidad", "unit": "servicio", "qty": 1, "unit_price": 1800.00 },
+    { "item": "Transferencia de conocimiento", "unit": "sesión", "qty": 2, "unit_price": 350.00 }
+  ],
+  "tax_rate": 15,
+  "payment_terms": "El pago se divide en dos hitos vinculados al avance del proyecto.",
+  "payment_terms_detail": "50% a la firma de la orden de trabajo, 50% a la aceptación del go-live.",
+  "validity_days": 30,
+  "warranty": "30 días de soporte correctivo posterior al go-live, incluido en el precio.",
+  "sender": {
+    "name": "Fernando Andrade",
+    "email": "info@polluxdata.com"
+  }
+}
