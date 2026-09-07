@@ -8,23 +8,62 @@
   },
   "title": "Migración de cargas de trabajo a Oracle Cloud Infrastructure",
   "summary": [
-    ["Proyecto", "Migración de ERP, tienda online y reporting a OCI"],
-    ["Oferta de referencia", "OF-2026-042"],
-    ["Inicio", "15 de septiembre de 2026"],
-    ["Go-live", "11 de octubre de 2026"],
-    ["Estado final", "Completado — aceptado por el cliente"]
+    [
+      "Proyecto",
+      "Migración de ERP, tienda online y reporting a OCI"
+    ],
+    [
+      "Oferta de referencia",
+      "OF-2026-042"
+    ],
+    [
+      "Inicio",
+      "15 de septiembre de 2026"
+    ],
+    [
+      "Go-live",
+      "11 de octubre de 2026"
+    ],
+    [
+      "Estado final",
+      "Completado — aceptado por el cliente"
+    ]
   ],
   "deliverables": [
-    { "name": "Assessment técnico y plan de migración", "status": "Entregado y aceptado" },
-    { "name": "Tienda online en producción (piloto)", "status": "En producción desde 25/09" },
-    { "name": "ERP y reporting en producción", "status": "En producción desde 11/10" },
-    { "name": "Alta disponibilidad y respaldos automatizados", "status": "Operativos" },
-    { "name": "Transferencia de conocimiento (2 sesiones)", "status": "Completadas" }
+    {
+      "name": "Assessment técnico y plan de migración",
+      "status": "Entregado y aceptado"
+    },
+    {
+      "name": "Tienda online en producción (piloto)",
+      "status": "En producción desde 25/09"
+    },
+    {
+      "name": "ERP y reporting en producción",
+      "status": "En producción desde 11/10"
+    },
+    {
+      "name": "Alta disponibilidad y respaldos automatizados",
+      "status": "Operativos"
+    },
+    {
+      "name": "Transferencia de conocimiento (2 sesiones)",
+      "status": "Completadas"
+    }
   ],
   "access": [
-    { "system": "Tenencia OCI y compartimento de producción", "owner": "María Fernández (Gerente de TI)" },
-    { "system": "Consola de respaldos y monitoreo", "owner": "Equipo de TI — turno de guardia" },
-    { "system": "Documentación operativa y runbooks", "owner": "Repositorio interno del cliente" }
+    {
+      "system": "Tenencia OCI y compartimento de producción",
+      "owner": "María Fernández (Gerente de TI)"
+    },
+    {
+      "system": "Consola de respaldos y monitoreo",
+      "owner": "Equipo de TI — turno de guardia"
+    },
+    {
+      "system": "Documentación operativa y runbooks",
+      "owner": "Repositorio interno del cliente"
+    }
   ],
   "warranty": [
     "30 días de soporte correctivo posterior al go-live, hasta el 10 de noviembre de 2026.",
@@ -37,5 +76,9 @@
     "Evaluar el plan de soporte gestionado antes del fin de la garantía."
   ],
   "acceptance": "Con las firmas abajo, el cliente declara aceptados los entregables del proyecto y cierra la fase de implementación.",
-  "sender": { "name": "Fernando Andrade", "email": "info@polluxdata.com" }
+  "sender": {
+    "name": "Fernando Andrade",
+    "email": "info@polluxdata.com"
+  },
+  "demo": true
 }

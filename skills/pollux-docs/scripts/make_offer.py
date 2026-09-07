@@ -78,7 +78,7 @@ def cover(c, doc, data):
     c.drawString(18 * mm, y, f"Contacto: {cl['contact']} — {cl['role']}")
 
     draw_star(c, W - 44 * mm, H - BAND / 2 - 3 * mm, 14 * mm)
-    footer(c, W, H)
+    footer(c, W, H, demo=data.get("demo", False))
     c.restoreState()
 
 

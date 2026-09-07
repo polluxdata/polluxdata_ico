@@ -48,7 +48,7 @@ def cover(c, doc, data):
     c.setFont(F_HEAD, size)
     c.drawString(18 * mm, y, data["service"])
     draw_star(c, W - 58 * mm, H - BAND / 2 - 1 * mm, 9.5 * mm)
-    footer(c, W, H)
+    footer(c, W, H, demo=data.get("demo", False))
     c.restoreState()
 
 

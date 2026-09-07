@@ -7,9 +7,24 @@
     "role": "Gerente de TI"
   },
   "pricing": [
-    { "item": "Assessment de nube — cargas actuales y plan de migración", "unit": "servicio", "qty": 1, "unit_price": 2500.00 },
-    { "item": "Horas de ingeniería cloud OCI", "unit": "hora", "qty": 40, "unit_price": 85.00 },
-    { "item": "Ambiente de staging en OCI (setup)", "unit": "servicio", "qty": 1, "unit_price": 1200.00 }
+    {
+      "item": "Assessment de nube — cargas actuales y plan de migración",
+      "unit": "servicio",
+      "qty": 1,
+      "unit_price": 2500.0
+    },
+    {
+      "item": "Horas de ingeniería cloud OCI",
+      "unit": "hora",
+      "qty": 40,
+      "unit_price": 85.0
+    },
+    {
+      "item": "Ambiente de staging en OCI (setup)",
+      "unit": "servicio",
+      "qty": 1,
+      "unit_price": 1200.0
+    }
   ],
   "tax_rate": 15,
   "validity_days": 15,
@@ -19,5 +34,6 @@
   "sender": {
     "name": "Fernando Andrade",
     "email": "info@polluxdata.com"
-  }
+  },
+  "demo": true
 }

@@ -10,16 +10,41 @@
   "challenge": "Importadora Andes sostenía su operación completa —ERP, tienda online y reporting— sobre servidores físicos con más de seis años, respaldos manuales semanales y cero redundancia. Cualquier falla de hardware iba a detener las ventas, y lo sabían.",
   "solution": "Migramos las tres cargas a Oracle Cloud Infrastructure en tres fases, con corte controlado y rollback definido. Implementamos alta disponibilidad en dos zonas, respaldos automáticos diarios y monitoreo con alertas. El equipo interno participó en todo el proceso y terminó operando la plataforma solo.",
   "metrics": [
-    { "value": "5 semanas", "label": "De kickoff a primera carga en producción" },
-    { "value": "99,95%", "label": "Disponibilidad desde el go-live" },
-    { "value": "-72%", "label": "Tiempo de respaldo completo" }
+    {
+      "value": "5 semanas",
+      "label": "De kickoff a primera carga en producción"
+    },
+    {
+      "value": "99,95%",
+      "label": "Disponibilidad desde el go-live"
+    },
+    {
+      "value": "-72%",
+      "label": "Tiempo de respaldo completo"
+    }
   ],
   "detail_rows": [
-    { "k": "Respaldo completo", "before": "Manual · 6 h", "after": "Automático · 1,7 h" },
-    { "k": "Recuperación ante fallos", "before": "Días", "after": "Minutos" },
-    { "k": "Ventana de corte de migración", "before": "—", "after": "0 min de datos perdidos" }
+    {
+      "k": "Respaldo completo",
+      "before": "Manual · 6 h",
+      "after": "Automático · 1,7 h"
+    },
+    {
+      "k": "Recuperación ante fallos",
+      "before": "Días",
+      "after": "Minutos"
+    },
+    {
+      "k": "Ventana de corte de migración",
+      "before": "—",
+      "after": "0 min de datos perdidos"
+    }
   ],
   "quote": "Pasamos de miedo a que se cayera todo, a no acordarnos de dónde están los servidores. El corte fue un sábado a las 11 de la noche y el domingo ya estábamos vendiendo.",
   "quote_author": "María Fernández — Gerente de TI, Importadora Andes",
-  "sender": { "name": "Fernando Andrade", "email": "info@polluxdata.com" }
+  "sender": {
+    "name": "Fernando Andrade",
+    "email": "info@polluxdata.com"
+  },
+  "demo": true
 }

@@ -337,6 +337,15 @@ def build(data, out):
     para(t3, "polluxdata.com", font=F_BODY, size=11, color=LIGHT2,
          align=PP_ALIGN.RIGHT)
 
+    if data.get("demo"):
+        for s in prs.slides:
+            t = s.shapes.add_textbox(Inches(SW - 4.3), Inches(0.12), Inches(3.7),
+                                     Inches(0.3))
+            tf = t.text_frame
+            tf.word_wrap = False
+            para(tf, "MUESTRA · DATOS FICTICIOS", font=F_SB, size=10, color=ORANGE,
+                 align=PP_ALIGN.RIGHT, first=True)
+
     prs.save(str(out))
 
 

@@ -8,21 +8,36 @@
   },
   "title": "Assessment de nube — cargas de trabajo on-premise",
   "findings": [
-    { "area": "Infraestructura", "severity": "alta",
+    {
+      "area": "Infraestructura",
+      "severity": "alta",
       "summary": "Servidores físicos con más de 6 años de antigüedad fuera de garantía, sin repuestos disponibles.",
-      "risk": "Una falla de hardware puede detener el ERP y la tienda online por días." },
-    { "area": "Respaldos", "severity": "alta",
+      "risk": "Una falla de hardware puede detener el ERP y la tienda online por días."
+    },
+    {
+      "area": "Respaldos",
+      "severity": "alta",
       "summary": "Respaldos manuales semanales, sin pruebas de restauración documentadas.",
-      "risk": "Pérdida de hasta 7 días de información ante un incidente." },
-    { "area": "Disponibilidad", "severity": "alta",
+      "risk": "Pérdida de hasta 7 días de información ante un incidente."
+    },
+    {
+      "area": "Disponibilidad",
+      "severity": "alta",
       "summary": "No existe redundancia: un solo punto de falla sostiene toda la operación.",
-      "risk": "Corte total de servicio ante cualquier indisponibilidad." },
-    { "area": "Seguridad", "severity": "media",
+      "risk": "Corte total de servicio ante cualquier indisponibilidad."
+    },
+    {
+      "area": "Seguridad",
+      "severity": "media",
       "summary": "Actualizaciones de sistema intermitentes y accesos compartidos entre usuarios.",
-      "risk": "Superficie de ataque ampliada y trazabilidad de cambios limitada." },
-    { "area": "Costos", "severity": "baja",
+      "risk": "Superficie de ataque ampliada y trazabilidad de cambios limitada."
+    },
+    {
+      "area": "Costos",
+      "severity": "baja",
       "summary": "Consumo eléctrico y mantenimiento creciente sin métricas de coste por servicio.",
-      "risk": "Costo total de propiedad difícil de justificar frente a nube." }
+      "risk": "Costo total de propiedad difícil de justificar frente a nube."
+    }
   ],
   "current_state": [
     "La operación completa depende de un rack local sin redundancia. Los respaldos salen del mismo entorno que protegen, lo que anula la protección ante desastres.",
@@ -36,11 +51,31 @@
     "Medir costes por servicio en nube para decisiones de presupuesto con datos."
   ],
   "roadmap": [
-    { "phase": "Fase 1", "action": "Assessment profundo y plan de migración detallado", "priority": "Inmediata" },
-    { "phase": "Fase 2", "action": "Migración piloto de la carga menos crítica", "priority": "Alta" },
-    { "phase": "Fase 3", "action": "Migración de ERP y reporting con corte controlado", "priority": "Alta" },
-    { "phase": "Fase 4", "action": "Respaldos, monitoreo y handover al equipo", "priority": "Media" }
+    {
+      "phase": "Fase 1",
+      "action": "Assessment profundo y plan de migración detallado",
+      "priority": "Inmediata"
+    },
+    {
+      "phase": "Fase 2",
+      "action": "Migración piloto de la carga menos crítica",
+      "priority": "Alta"
+    },
+    {
+      "phase": "Fase 3",
+      "action": "Migración de ERP y reporting con corte controlado",
+      "priority": "Alta"
+    },
+    {
+      "phase": "Fase 4",
+      "action": "Respaldos, monitoreo y handover al equipo",
+      "priority": "Media"
+    }
   ],
   "next_steps": "Proponemos una sesión de 45 minutos para revisar este informe con tu equipo y priorizar el roadmap. La migración puede arrancar en 5 días hábiles tras la orden de trabajo.",
-  "sender": { "name": "Fernando Andrade", "email": "info@polluxdata.com" }
+  "sender": {
+    "name": "Fernando Andrade",
+    "email": "info@polluxdata.com"
+  },
+  "demo": true
 }

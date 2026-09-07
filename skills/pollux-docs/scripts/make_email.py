@@ -7,7 +7,9 @@ import json
 import sys
 from pathlib import Path
 
-TPL = """Asunto: {subject}
+TPL = """[ DOCUMENTO DE PRUEBA · DATOS FICTICIOS ]
+
+Asunto: {subject}
 
 Hola {contact_name}:
 
@@ -21,6 +23,8 @@ Un saludo,
 
 {sender_name}
 PolluxData · polluxdata.com · {sender_email}
+
+[ Fin de la muestra — generado con pollux-docs · datos 100% ficticios ]
 """
 
 

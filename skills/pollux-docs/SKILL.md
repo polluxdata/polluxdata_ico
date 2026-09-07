@@ -40,6 +40,8 @@ This skill defines the structure of each PolluxData commercial document type. **
 
 Each type has a `sample-*.json` next to its reference for testing. Shared generator code lives in `scripts/common.py` (band cover, footer, headings, tables, totals, signature block, tokens).
 
+**Demo mode**: if the input JSON contains `"demo": true`, all generators stamp a visible "MUESTRA · DATOS FICTICIOS" mark (corner tag + diagonal watermark on PDFs, corner tag on every slide, header/footer notice on emails). Always set `demo: true` for test/publication samples — real documents must never carry it.
+
 ## Pitfalls
 
 - Never put the mascot inside pricing, scope or legal sections

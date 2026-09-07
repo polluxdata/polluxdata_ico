@@ -16,18 +16,46 @@
     "Escalado directo con el equipo que migró tus sistemas"
   ],
   "sla": [
-    { "level": "Crítica", "example": "Servicio caído en producción", "response": "30 min" },
-    { "level": "Alta", "example": "Degradación notable del servicio", "response": "2 horas" },
-    { "level": "Media", "example": "Fallo sin impacto directo al usuario", "response": "8 horas" },
-    { "level": "Baja", "example": "Solicitudes y cambios programados", "response": "24 horas" }
+    {
+      "level": "Crítica",
+      "example": "Servicio caído en producción",
+      "response": "30 min"
+    },
+    {
+      "level": "Alta",
+      "example": "Degradación notable del servicio",
+      "response": "2 horas"
+    },
+    {
+      "level": "Media",
+      "example": "Fallo sin impacto directo al usuario",
+      "response": "8 horas"
+    },
+    {
+      "level": "Baja",
+      "example": "Solicitudes y cambios programados",
+      "response": "24 horas"
+    }
   ],
   "monthly_scope": [
-    { "concept": "Horas de gestión incluidas", "value": "8 h" },
-    { "concept": "Revisión operativa mensual", "value": "1 sesión" },
-    { "concept": "Reporte de costes y respaldos", "value": "Mensual" },
-    { "concept": "Canales de atención", "value": "WhatsApp · Email" }
+    {
+      "concept": "Horas de gestión incluidas",
+      "value": "8 h"
+    },
+    {
+      "concept": "Revisión operativa mensual",
+      "value": "1 sesión"
+    },
+    {
+      "concept": "Reporte de costes y respaldos",
+      "value": "Mensual"
+    },
+    {
+      "concept": "Canales de atención",
+      "value": "WhatsApp · Email"
+    }
   ],
-  "monthly_fee": 690.00,
+  "monthly_fee": 690.0,
   "tax_rate": 15,
   "payment_terms": "Facturación mensual por adelantado. Transferencia bancaria a 15 días.",
   "conditions": [
@@ -36,5 +64,9 @@
     "<b>Consumos de nube:</b> se pagan directamente al proveedor según uso.",
     "<b>Escalado:</b> el plan se ajusta cada 6 meses según el crecimiento del entorno."
   ],
-  "sender": { "name": "Fernando Andrade", "email": "info@polluxdata.com" }
+  "sender": {
+    "name": "Fernando Andrade",
+    "email": "info@polluxdata.com"
+  },
+  "demo": true
 }

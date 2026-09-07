@@ -30,15 +30,44 @@
     "Migración de datos históricos de archivo"
   ],
   "phases": [
-    { "deliverable": "Assessment e informe técnico + plan de corte", "duration": "2 semanas" },
-    { "deliverable": "Tienda online operando en OCI (piloto)", "duration": "3 semanas" },
-    { "deliverable": "ERP y reporting en producción + handover", "duration": "4 semanas" }
+    {
+      "deliverable": "Assessment e informe técnico + plan de corte",
+      "duration": "2 semanas"
+    },
+    {
+      "deliverable": "Tienda online operando en OCI (piloto)",
+      "duration": "3 semanas"
+    },
+    {
+      "deliverable": "ERP y reporting en producción + handover",
+      "duration": "4 semanas"
+    }
   ],
   "pricing": [
-    { "item": "Assessment técnico y plan de migración", "unit": "servicio", "qty": 1, "unit_price": 2500.00 },
-    { "item": "Migración de cargas de trabajo a OCI", "unit": "workload", "qty": 3, "unit_price": 3200.00 },
-    { "item": "Configuración de alta disponibilidad", "unit": "servicio", "qty": 1, "unit_price": 1800.00 },
-    { "item": "Transferencia de conocimiento", "unit": "sesión", "qty": 2, "unit_price": 350.00 }
+    {
+      "item": "Assessment técnico y plan de migración",
+      "unit": "servicio",
+      "qty": 1,
+      "unit_price": 2500.0
+    },
+    {
+      "item": "Migración de cargas de trabajo a OCI",
+      "unit": "workload",
+      "qty": 3,
+      "unit_price": 3200.0
+    },
+    {
+      "item": "Configuración de alta disponibilidad",
+      "unit": "servicio",
+      "qty": 1,
+      "unit_price": 1800.0
+    },
+    {
+      "item": "Transferencia de conocimiento",
+      "unit": "sesión",
+      "qty": 2,
+      "unit_price": 350.0
+    }
   ],
   "tax_rate": 15,
   "payment_terms": "El pago se divide en dos hitos vinculados al avance del proyecto.",
@@ -48,5 +77,6 @@
   "sender": {
     "name": "Fernando Andrade",
     "email": "info@polluxdata.com"
-  }
+  },
+  "demo": true
 }

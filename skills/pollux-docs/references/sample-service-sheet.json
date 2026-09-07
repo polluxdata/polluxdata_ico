@@ -12,10 +12,23 @@
     "30 días de soporte correctivo post go-live"
   ],
   "deliverables": [
-    { "name": "Informe de assessment y plan de corte", "when": "Semana 2" },
-    { "name": "Primera carga en producción (piloto)", "when": "Semana 5" },
-    { "name": "Migración completa y handover", "when": "Semana 9" }
+    {
+      "name": "Informe de assessment y plan de corte",
+      "when": "Semana 2"
+    },
+    {
+      "name": "Primera carga en producción (piloto)",
+      "when": "Semana 5"
+    },
+    {
+      "name": "Migración completa y handover",
+      "when": "Semana 9"
+    }
   ],
   "from_price": "4.900",
-  "sender": { "name": "Fernando Andrade", "email": "info@polluxdata.com" }
+  "sender": {
+    "name": "Fernando Andrade",
+    "email": "info@polluxdata.com"
+  },
+  "demo": true
 }

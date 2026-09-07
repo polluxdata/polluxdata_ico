@@ -111,7 +111,20 @@ def draw_star(c, cx, cy, r):
     c.restoreState()
 
 
-def footer(c, W, H):
+def demo_marker(c, W, H):
+    c.saveState()
+    c.setFont(F_HEAD_B, 6.5)
+    c.setFillColor(ORANGE)
+    c.drawRightString(W - 10 * mm, H - 7 * mm, "MUESTRA · DATOS FICTICIOS")
+    c.translate(W / 2, H / 2)
+    c.rotate(45)
+    c.setFont(F_HEAD, 92)
+    c.setFillAlpha(0.10)
+    c.drawCentredString(0, 0, "MUESTRA")
+    c.restoreState()
+
+
+def footer(c, W, H, demo=False):
     fh = 15 * mm
     c.setFillColor(NAVY)
     c.rect(0, 0, W, fh, stroke=0, fill=1)
@@ -130,6 +143,8 @@ def footer(c, W, H):
     c.setFillColor(HexColor("#5F6B7A"))
     c.setFont(F_BODY, 6.5)
     c.drawRightString(W - 18 * mm, fh / 2 - 4.2, f"Página {c.getPageNumber():02d}")
+    if demo:
+        demo_marker(c, W, H)
 
 
 def later_header(c, doc, data, label):
@@ -144,7 +159,7 @@ def later_header(c, doc, data, label):
     c.setFillColor(BODY_C)
     c.setFont(F_BODY, 7)
     c.drawRightString(W - 18 * mm, H - 12.4 * mm, f"{data['ref']}")
-    footer(c, W, H)
+    footer(c, W, H, demo=data.get("demo", False))
     c.restoreState()
 
 
@@ -214,7 +229,7 @@ def band_cover(c, doc, data, label, band=64 * mm, title=None, title_size=17.5,
     c.setFont(F_BODY, 8)
     c.drawString(18 * mm, y - 12, f"Contacto: {cl['contact']} — {cl['role']}")
     draw_star(c, W - 44 * mm, H - band / 2 - 3 * mm, 14 * mm)
-    footer(c, W, H)
+    footer(c, W, H, demo=data.get("demo", False))
     c.restoreState()
 
 
