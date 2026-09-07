@@ -28,9 +28,17 @@ This skill defines the structure of each PolluxData commercial document type. **
 
 | Type | Reference | Output format |
 |---|---|---|
-| Offer / proposal | `references/offer.md` | PDF (preferred) or DOCX |
-| Proforma | `references/proforma.md` (when created) | PDF |
-| Presentation | `references/presentation.md` (when created) | PPTX |
+| Offer / proposal | `references/offer.md` | PDF |
+| Proforma | `references/proforma.md` | PDF |
+| Presentation | `references/presentation.md` | PPTX |
+| Service sheet (one-pager) | `references/service-sheet.md` | PDF |
+| Assessment report | `references/assessment.md` | PDF |
+| Support plan (PolluxData Care) | `references/support-plan.md` | PDF |
+| Case study | `references/case-study.md` | PDF |
+| Project closure | `references/closure.md` | PDF |
+| Follow-up email | `references/followup-email.md` | TXT |
+
+Each type has a `sample-*.json` next to its reference for testing. Shared generator code lives in `scripts/common.py` (band cover, footer, headings, tables, totals, signature block, tokens).
 
 ## Pitfalls
 

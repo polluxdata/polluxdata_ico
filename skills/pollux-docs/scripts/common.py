@@ -9,6 +9,7 @@ from reportlab.lib.enums import TA_LEFT, TA_RIGHT
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
+from reportlab.lib.utils import simpleSplit
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
@@ -72,6 +73,10 @@ S = {
                            textColor=MUTED_C),
 }
 S["th_num"] = ParagraphStyle("th_num", parent=S["th"], alignment=TA_RIGHT)
+S["big"] = ParagraphStyle("big", fontName=F_BODY_SB, fontSize=20, leading=26,
+                          textColor=ORANGE, spaceAfter=8)
+S["metric"] = ParagraphStyle("metric", fontName=F_BODY_SB, fontSize=24, leading=29,
+                             textColor=ORANGE, spaceAfter=4)
 
 
 def fmt(n):
@@ -167,6 +172,99 @@ def table_style():
         ("LEFTPADDING", (0, 0), (-1, -1), 7),
         ("RIGHTPADDING", (0, 0), (-1, -1), 7),
     ])
+
+
+def band_cover(c, doc, data, label, band=64 * mm, title=None, title_size=17.5,
+               client_label="Preparada para"):
+    W, H = A4
+    top = H
+    c.saveState()
+    c.setFillColor(NAVY)
+    c.rect(0, H - band, W, band, stroke=0, fill=1)
+    logo = ASSETS / "logo" / "pollux-logo.png"
+    lw = 24 * mm
+    if logo.exists():
+        c.drawImage(str(logo), 18 * mm, top - 6 * mm - lw * 150 / 218,
+                    width=lw, height=lw * 150 / 218, mask="auto")
+    c.setFillColor(ORANGE)
+    c.setFont(F_HEAD_B, 9.5)
+    c.drawRightString(W - 18 * mm, top - 12 * mm, f"Ref {data['ref']}")
+    c.setFillColor(HexColor("#A9B0BD"))
+    c.setFont(F_BODY, 7.5)
+    c.drawRightString(W - 18 * mm, top - 16.5 * mm, human_date(data["date"]))
+    spaced_kicker(c, label, 18 * mm, top - 27 * mm)
+    y = top - 37 * mm
+    if title:
+        size = title_size
+        lines = simpleSplit(title, F_HEAD, size, W - 36 * mm - 60 * mm)
+        while len(lines) > 2 and size > 12:
+            size -= 0.5
+            lines = simpleSplit(title, F_HEAD, size, W - 36 * mm - 60 * mm)
+        c.setFillColor(white)
+        c.setFont(F_HEAD, size)
+        for ln in lines:
+            c.drawString(18 * mm, y, ln)
+            y -= size * 1.2
+        y -= 5
+    cl = data["client"]
+    c.setFillColor(HexColor("#C8D4E6"))
+    c.setFont(F_BODY_SB, 9)
+    c.drawString(18 * mm, y, f"{client_label} {cl['company']}")
+    c.setFillColor(HexColor("#8B97A8"))
+    c.setFont(F_BODY, 8)
+    c.drawString(18 * mm, y - 12, f"Contacto: {cl['contact']} — {cl['role']}")
+    draw_star(c, W - 44 * mm, H - band / 2 - 3 * mm, 14 * mm)
+    footer(c, W, H)
+    c.restoreState()
+
+
+def signature_block(data):
+    W, H = A4
+    half = (W - 36 * mm) / 2 - 6 * mm
+    gap = 12 * mm
+    sig = [
+        [Paragraph("<b>Por PolluxData</b>", S["td_b"]), Paragraph("", S["td"]),
+         Paragraph(f"<b>Por {data['client']['company']}</b>", S["td_b"])],
+        [Paragraph(data["sender"]["name"], S["td"]), Paragraph("", S["td"]),
+         Paragraph("", S["td"])],
+        [Paragraph("Cargo: ____________________", S["td"]), Paragraph("", S["td"]),
+         Paragraph("Nombre: ____________________", S["td"])],
+        [Paragraph("Firma", S["note"]), Paragraph("", S["td"]),
+         Paragraph("Firma", S["note"])],
+        [Paragraph("", S["td"]), Paragraph("", S["td"]), Paragraph("", S["td"])],
+        [Paragraph("Fecha: ______ / ______ / __________", S["td"]),
+         Paragraph("", S["td"]),
+         Paragraph("Fecha: ______ / ______ / __________", S["td"])],
+    ]
+    stg = Table(sig, colWidths=[half, gap, half])
+    stg.setStyle(TableStyle([
+        ("LINEBELOW", (0, 4), (0, 4), 0.9, NAVY),
+        ("LINEBELOW", (2, 4), (2, 4), 0.9, NAVY),
+        ("TOPPADDING", (0, 0), (-1, -1), 4),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+        ("LEFTPADDING", (0, 0), (-1, -1), 0),
+        ("RIGHTPADDING", (0, 0), (-1, 1), 8),
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+    ]))
+    return stg
+
+
+def pricing_table(data, W):
+    cols = [9 * mm, 0, 20 * mm, 14 * mm, 30 * mm, 32 * mm]
+    cols[1] = (W - 36 * mm) - sum(cols) + cols[1]
+    head = [Paragraph("#", S["th_num"]), Paragraph("Concepto", S["th"]),
+            Paragraph("Unidad", S["th"])] + \
+           [Paragraph(x, S["th_num"]) for x in ["Cant.", "P. unit. (USD)", "Total (USD)"]]
+    rows = [head]
+    for i, it in enumerate(data["pricing"], 1):
+        tot = it["qty"] * it["unit_price"]
+        rows.append([Paragraph(str(i), S["td_num"]), Paragraph(it["item"], S["td"]),
+                     Paragraph(it["unit"], S["td"]), Paragraph(str(it["qty"]), S["td_num"]),
+                     Paragraph(fmt(it["unit_price"]), S["td_num"]), Paragraph(fmt(tot), S["td_num"])])
+    t = Table(rows, colWidths=cols, repeatRows=1)
+    t.hAlign = "LEFT"
+    t.setStyle(table_style())
+    return t
 
 
 def totals_block(sub, tax_rate):

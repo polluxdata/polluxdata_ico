@@ -177,28 +177,8 @@ def build(data, out):
         f"<font color=\"#F07A1F\"><b>{data['sender']['email']}</b></font>. "
         "Cualquier duda la respondemos el mismo día.", S["body"]))
     st.append(Spacer(1, 8))
-    half = (W - 36 * mm) / 2 - 6 * mm
-    sig = [
-        [Paragraph("<b>Por PolluxData</b>", S["td_b"]),
-         Paragraph(f"<b>Por {data['client']['company']}</b>", S["td_b"])],
-        [Paragraph(data["sender"]["name"], S["td"]), Paragraph("", S["td"])],
-        [Paragraph("Cargo: ____________________", S["td"]),
-         Paragraph("Nombre: ____________________", S["td"])],
-        [Paragraph("Firma", S["note"]), Paragraph("Firma", S["note"])],
-        [Paragraph("", S["td"]), Paragraph("", S["td"])],
-        [Paragraph("Fecha: ______ / ______ / __________", S["td"]),
-         Paragraph("Fecha: ______ / ______ / __________", S["td"])],
-    ]
-    stg = Table(sig, colWidths=[half, half])
-    stg.setStyle(TableStyle([
-        ("LINEBELOW", (0, 4), (-1, 4), 0.9, NAVY),
-        ("TOPPADDING", (0, 0), (-1, -1), 4),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
-        ("LEFTPADDING", (0, 0), (-1, -1), 0),
-        ("RIGHTPADDING", (0, 0), (-1, 1), 24),
-        ("VALIGN", (0, 0), (-1, -1), "TOP"),
-    ]))
-    st.append(KeepTogether([stg]))
+    from common import signature_block
+    st.append(KeepTogether([signature_block(data)]))
 
     doc.build(st)
 

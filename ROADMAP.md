@@ -11,12 +11,12 @@ Lista de documentos que PolluxData debe tener como plantilla, por prioridad:
 | ✅ Hecha | Oferta / propuesta | `references/offer.md` | PDF / DOCX | Estructura completa, modo Paper |
 | ✅ Hecha | Proforma | `references/proforma.md` | PDF | Transaccional 1 página, banda compacta, sin prosa comercial |
 | ✅ Hecha | Presentación comercial | `references/presentation.md` | PPTX | 8 slides: portada dark con mascota, interior Paper mode, cierre CTA |
-| ⬜ Pendiente | Ficha de servicio (one-pager) | `references/service-sheet.md` | PDF | Una página por servicio (migración OCI, FinOps, etc.), formato deck de venta rápida |
-| ⬜ Pendiente | Informe de assessment | `references/assessment.md` | PDF | Auditoría cloud inicial: hallazgos, riesgos, recomendaciones, roadmap |
-| ⬜ Pendiente | Propuesta de soporte mensual | `references/support-plan.md` | PDF | Planes de soporte gestionado, SLAs, matriz de horas |
-| ⬜ Pendiente | Caso de éxito | `references/case-study.md` | PDF / PPTX | Plantilla cliente-problema-solución-resultados con métricas |
-| ⬜ Pendiente | Informe de cierre de proyecto | `references/project-closure.md` | PDF | Entregables, accesos, garantía, handover |
-| ⬜ Pendiente | Email de seguimiento comercial | `references/followup-email.md` | Texto | Tono informal-ganadora, breve, con CTA claro |
+| ✅ Hecha | Ficha de servicio (one-pager) | `references/service-sheet.md` | PDF | Transaccional 1 página, banda compacta 56mm, precio "Desde USD" |
+| ✅ Hecha | Informe de assessment | `references/assessment.md` | PDF | Hallazgos con severidad (alta en naranja), roadmap y recomendaciones |
+| ✅ Hecha | Propuesta de soporte mensual | `references/support-plan.md` | PDF | PolluxData Care: SLA, alcance, tarifa mensual, firmas |
+| ✅ Hecha | Caso de éxito | `references/case-study.md` | PDF / PPTX | Métricas hero naranjas, tabla antes/después, cita de cliente — 1 página |
+| ✅ Hecha | Informe de cierre de proyecto | `references/project-closure.md` | PDF | Entregables con ✓, accesos sin credenciales, acta de aceptación |
+| ✅ Hecha | Email de seguimiento comercial | `references/followup-email.md` | Texto | Plantilla .txt con make_email.py, CTA con dos opciones |
 | ⬜ Opcional | Acuerdo marco de servicios (MSA) | `references/msa.md` | DOCX | Legal — revisar con asesor antes de automatizar |
 
 ## 2. Infraestructura del repo

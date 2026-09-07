@@ -1,0 +1,40 @@
+{
+  "ref": "SP-2026-003",
+  "date": "2026-09-07",
+  "client": {
+    "company": "Importadora Andes Cía. Ltda.",
+    "contact": "María Fernández",
+    "role": "Gerente de TI"
+  },
+  "title": "PolluxData Care — Soporte gestionado OCI",
+  "includes": [
+    "Monitoreo 24/7 de servicios y recursos en OCI",
+    "Atención de incidentes por canal directo (WhatsApp y email)",
+    "Horas de gestión mensual para cambios y mejoras",
+    "Revisión mensual de costes y respaldos con reporte",
+    "Gestión de parches de seguridad programados",
+    "Escalado directo con el equipo que migró tus sistemas"
+  ],
+  "sla": [
+    { "level": "Crítica", "example": "Servicio caído en producción", "response": "30 min" },
+    { "level": "Alta", "example": "Degradación notable del servicio", "response": "2 horas" },
+    { "level": "Media", "example": "Fallo sin impacto directo al usuario", "response": "8 horas" },
+    { "level": "Baja", "example": "Solicitudes y cambios programados", "response": "24 horas" }
+  ],
+  "monthly_scope": [
+    { "concept": "Horas de gestión incluidas", "value": "8 h" },
+    { "concept": "Revisión operativa mensual", "value": "1 sesión" },
+    { "concept": "Reporte de costes y respaldos", "value": "Mensual" },
+    { "concept": "Canales de atención", "value": "WhatsApp · Email" }
+  ],
+  "monthly_fee": 690.00,
+  "tax_rate": 15,
+  "payment_terms": "Facturación mensual por adelantado. Transferencia bancaria a 15 días.",
+  "conditions": [
+    "<b>Permanencia mínima:</b> 6 meses, luego renovación mensual.",
+    "<b>Horas:</b> las horas no usadas no se acumulan; las excedentes se cobran a tarifa preferencial.",
+    "<b>Consumos de nube:</b> se pagan directamente al proveedor según uso.",
+    "<b>Escalado:</b> el plan se ajusta cada 6 meses según el crecimiento del entorno."
+  ],
+  "sender": { "name": "Fernando Andrade", "email": "info@polluxdata.com" }
+}
