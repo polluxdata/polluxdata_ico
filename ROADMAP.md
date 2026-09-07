@@ -9,7 +9,7 @@ Lista de documentos que PolluxData debe tener como plantilla, por prioridad:
 | Estado | Documento | Reference | Formato | Notas |
 |---|---|---|---|---|
 | ✅ Hecha | Oferta / propuesta | `references/offer.md` | PDF / DOCX | Estructura completa, modo Paper |
-| ⬜ Pendiente | Proforma | `references/proforma.md` | PDF | Cotización con líneas de producto, numeración PF-YYYY-NNN, sin tono comercial, prólogo mínimo |
+| ✅ Hecha | Proforma | `references/proforma.md` | PDF | Transaccional 1 página, banda compacta, sin prosa comercial |
 | ⬜ Pendiente | Presentación comercial | `references/presentation.md` | PPTX | Portada Dark cinematic con Pollux, interior Paper mode, slides de partner reutilizables (OCI/AWS/Azure) |
 | ⬜ Pendiente | Ficha de servicio (one-pager) | `references/service-sheet.md` | PDF | Una página por servicio (migración OCI, FinOps, etc.), formato deck de venta rápida |
 | ⬜ Pendiente | Informe de assessment | `references/assessment.md` | PDF | Auditoría cloud inicial: hallazgos, riesgos, recomendaciones, roadmap |

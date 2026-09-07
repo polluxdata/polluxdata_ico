@@ -1,0 +1,23 @@
+{
+  "ref": "PF-2026-017",
+  "date": "2026-09-07",
+  "client": {
+    "company": "Importadora Andes Cía. Ltda.",
+    "contact": "María Fernández",
+    "role": "Gerente de TI"
+  },
+  "pricing": [
+    { "item": "Assessment de nube — cargas actuales y plan de migración", "unit": "servicio", "qty": 1, "unit_price": 2500.00 },
+    { "item": "Horas de ingeniería cloud OCI", "unit": "hora", "qty": 40, "unit_price": 85.00 },
+    { "item": "Ambiente de staging en OCI (setup)", "unit": "servicio", "qty": 1, "unit_price": 1200.00 }
+  ],
+  "tax_rate": 15,
+  "validity_days": 15,
+  "payment_terms_detail": "100% contra aceptación de la orden de trabajo.",
+  "delivery_time": "Inicio en 5 días hábiles desde la orden de trabajo.",
+  "payment_details": "Transferencia bancaria. Los datos de cuenta se envían junto con la factura.",
+  "sender": {
+    "name": "Fernando Andrade",
+    "email": "info@polluxdata.com"
+  }
+}
