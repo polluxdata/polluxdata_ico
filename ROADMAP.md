@@ -37,11 +37,11 @@ Lista de documentos que PolluxData debe tener como plantilla, por prioridad:
 
 - [ ] Servir descubrimiento estándar en `https://polluxdata.com/.well-known/skills/index.json` (copiar a `public/.well-known/skills/` en el repo de la web Astro y desplegar)
 - [x] Marketplace de plugin de Claude Code (`.claude-plugin/marketplace.json` + plugin.json por skill)
-- [ ] Dar de alta el tap en Hermes: verificar `hermes skills tap add polluxdata/polluxdata_ico` end-to-end
+- [x] Tap en Hermes verificado end-to-end (2026-09-07): `tap add` OK, instalación por URL OK (ambos skills en ~/.hermes/skills/), sesión real carga el skill y responde con los tokens correctos. Pendiente menor: la indexación del tap por búsqueda requiere un GITHUB_TOKEN válido — el de ~/.hermes/.env está comentado y caducado ("Bad credentials")
 - [ ] Opcional: alta en skills.sh para descubrimiento público
 
 ## 4. Prueba de fuego
 
-- [ ] Generar una oferta real de prueba con un agente cargando los dos skills y validar: totales, fechas, tono, sin placeholders
+- [x] Oferta de prueba generada y validada (OF-2026-042: totales, fechas, tono, checklist; APTA por visión)
 - [x] Presentación de prueba generada (PRES-OF-2026-042, 8 slides, APTA por visión)
 - [x] Revisión visual de la familia completa (9 documentos auditados por visión; reconocibles como una sola marca)
