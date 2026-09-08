@@ -7,7 +7,7 @@ Todos los cambios de identidad visual se registran aquí. Un cambio de token pas
 - **Vectores oficiales obtenidos** de MKT/Logos (OneDrive): `pollux-wordmark.svg` regenerado con los contornos reales (ATComputer + BankGothicCLtBT; la reconstrucción Michroma retirada definitivamente)
 - Color oficial del isotipo confirmado desde el SVG fuente: `#D45500` (la medición previa `#D04503` venía del antialiasing del favicon)
 - Carpeta `assets/logo/official/` con los archivos fuente de marca: logofinal.svg/.pdf/.png, logofinal_blanco.png, logofinal_bw.png, estrella.svg/.png
-- Nuevos assets de mascota informal: familia **PolluxDog** (silueta flat navy #202B56 de frente, con sus Wayfarer renderizadas como parches pixel-art a la altura de los ojos) — polluxdog.png, DisenoSoloCara, DisenoCompleto con tagline, variante negra. Reglas de uso documentadas en SKILL.md (emails/firmas informales; nunca en documentos formales)
+- Nuevos assets de mascota informal: familia **PolluxDog** (silueta flat navy #202B56 de frente, con sus Wayfarer renderizadas en ESPACIO NEGATIVO: lentes recortadas con puente pixel y brillos, visibles sobre fondos de color) — polluxdog.png, DisenoSoloCara, DisenoCompleto con tagline, variante negra. Reglas de uso documentadas en SKILL.md (emails/firmas informales; nunca en documentos formales; regla crítica de fondo contrastante — sobre navy desaparece)
 
 ## 1.1.1 — 2026-09-07
 

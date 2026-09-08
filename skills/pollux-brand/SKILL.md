@@ -106,7 +106,7 @@ English prompt base for image generators:
 
 ### PolluxDog icon (flat, informal)
 
-Flat navy `#202B56` silhouette of the schnauzer head, front view: dropped triangular ears, spiky beard, and his signature **Wayfarer sunglasses rendered as pixel-art patches** at eye level (abstract pixel style, no frame detail). This is the informal Pollux — same character as the CGI mascot, different rendering. For informal contexts:
+Flat navy `#202B56` silhouette of the schnauzer head, front view: dropped triangular ears, spiky beard, and his signature **Wayfarer sunglasses rendered as negative space** — the lenses are cut out of the silhouette (background shows through), with a pixel bridge over the nose, pixel shine accents inside each lens, and even the nose/mouth details cut out. The glasses are invisible on white (white-on-white) and pop on colored backgrounds. Same character as the CGI mascot, different technique. For informal contexts:
 
 | File | Content | Usage |
 |---|---|---|
@@ -116,6 +116,8 @@ Flat navy `#202B56` silhouette of the schnauzer head, front view: dropped triang
 | `assets/mascot/polluxdog_black.jpg` | Black variant | Dark/light prints where navy doesn't work |
 
 Rules: PolluxDog is welcome in email signatures, informal emails, social media and casual one-pagers. NEVER in formal documents (offers, proformas, assessments — those use the isotype star), never recolored, never rebuilt.
+
+**Background rule (critical)**: the design is negative-space — always place it on a CONTRASTING background (white, light tones, or brand accents like orange). Never navy-on-navy: the silhouette and the Wayfarers both disappear. On dark email themes, put a light circle/rounded square behind the icon first.
 
 ### Usage rules
 
