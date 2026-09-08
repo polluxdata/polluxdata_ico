@@ -65,7 +65,7 @@ def cover(c, doc, data):
     c.setFillColor(HexColor("#8B97A8"))
     c.drawString(18 * mm, y - 4.6 * mm, f"Contacto: {cl['contact']} — {cl['role']}")
 
-    draw_star(c, W - 58 * mm, H - BAND / 2 - 1 * mm, 9.5 * mm)
+    draw_star(c, W - 58 * mm, H - BAND / 2 - 2 * mm, 9.5 * mm)
     footer(c, W, H, demo=data.get("demo", False))
     c.restoreState()
 

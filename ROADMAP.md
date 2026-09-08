@@ -29,8 +29,8 @@ Lista de documentos que PolluxData debe tener como plantilla, por prioridad:
 - [ ] Decidir política de color en portadas con mascota: aceptar el rojo de la escena partner (Oracle) como acento justificado o regenerar escena en navy/naranja
 - [ ] Fuentes corregidas y sincronizadas; si se cambian, re-ejecutar el fix de name tables (Manrope-ExtraLight bug del instancer) y re-instalar en LibreOffice (`Resources/fonts/truetype`)
 - [ ] Asset de mascota "modo Paper": variante con fondo navy `#06111F` o transparente, sin escena de partner (los assets actuales llevan la escena roja/neón incrustada, no apta para bandas de documentos) — pendiente de generar
-- [ ] Logo en alta resolución: SVG (wordmark + isotipo) o PNG @2x — el PNG actual de 218px se ve pixelado en portadas A4
-- [ ] Recrear el logo SVG fiel al original si no se dispone del vector fuente
+- [ ] Logo en alta resolución: isotipo SVG ✅ (medido del favicon, `pollux-star.svg`); **falta el wordmark vectorial original** — pedirlo al diseñador/fuente original (la reconstrucción con Michroma se descartó por infiel)
+- [ ] Color del isotipo corregido a `#D04503` (medido por píxel) — revisar usos web actuales que usen `#F05A24`
 - [ ] Versionado de marca: `CHANGELOG.md` en `pollux-brand` — cualquier cambio de token pasa por ahí
 
 ## 3. Distribución

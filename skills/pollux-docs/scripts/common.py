@@ -101,13 +101,20 @@ def draw_star(c, cx, cy, r):
     c.saveState()
     c.setStrokeColor(ORANGE)
     c.setStrokeAlpha(0.42)
-    c.setLineWidth(0.9)
-    for i in range(8):
-        ang = math.radians(90 + i * 45)
-        rr = r if i % 2 == 0 else r * 0.62
-        c.line(cx, cy, cx + rr * math.cos(ang), cy + rr * math.sin(ang))
-    c.setStrokeAlpha(0.3)
-    c.circle(cx, cy, r * 0.5, stroke=1, fill=0)
+    c.setLineWidth(0.094 * r)
+    d0 = 0.34 * r
+    c.line(cx, cy - 1.66 * r, cx, cy - d0)
+    c.line(cx, cy + d0, cx, cy + 1.66 * r)
+    c.line(cx - r, cy, cx - d0, cy)
+    c.line(cx + d0, cy, cx + r, cy)
+    c.line(cx - 0.51 * r, cy - 0.51 * r, cx - 0.24 * r, cy - 0.24 * r)
+    c.line(cx + 0.24 * r, cy - 0.24 * r, cx + 0.51 * r, cy - 0.51 * r)
+    c.line(cx - 0.51 * r, cy + 0.51 * r, cx - 0.24 * r, cy + 0.24 * r)
+    c.line(cx + 0.24 * r, cy + 0.24 * r, cx + 0.51 * r, cy + 0.51 * r)
+    c.circle(cx, cy, 0.72 * r, stroke=1, fill=0)
+    c.setFillColor(ORANGE)
+    c.setFillAlpha(0.55)
+    c.circle(cx, cy, 0.106 * r, stroke=0, fill=1)
     c.restoreState()
 
 
@@ -228,7 +235,7 @@ def band_cover(c, doc, data, label, band=64 * mm, title=None, title_size=17.5,
     c.setFillColor(HexColor("#8B97A8"))
     c.setFont(F_BODY, 8)
     c.drawString(18 * mm, y - 12, f"Contacto: {cl['contact']} — {cl['role']}")
-    draw_star(c, W - 44 * mm, H - band / 2 - 3 * mm, 14 * mm)
+    draw_star(c, W - 62 * mm, H - band / 2 - 3 * mm, 14 * mm)
     footer(c, W, H, demo=data.get("demo", False))
     c.restoreState()
 
