@@ -23,14 +23,14 @@ Lista de documentos que PolluxData debe tener como plantilla, por prioridad:
 
 - [ ] Generadores reales en `skills/pollux-docs/scripts/`: `make_offer.py`, `make_proforma.py` (DOCX→PDF con tokens de marca vía `palette.py`)
 - [ ] Incluir fuentes en `skills/pollux-brand/assets/fonts/` (Manrope, Inter — verificar licencia OFL para redistribución)
-- [ ] Crear versiones SVG del logo (wordmark e isotipo) — ahora solo hay PNG pequeños
+- [x] Versiones SVG del logo: wordmark e isotipo oficiales en assets/logo/
 - [ ] Validación CI: lint de SKILL.md (frontmatter válido), JSON schemas, chequeo de que toda reference nueva está listada en el `SKILL.md` y en este roadmap
 - [ ] Ampliar catálogo de la mascota: poses catalogadas con nombre (`pollux-thumbs-up`, `pollux-pointing`, `pollux-thinking`) y regla de uso de cada una
 - [ ] Decidir política de color en portadas con mascota: aceptar el rojo de la escena partner (Oracle) como acento justificado o regenerar escena en navy/naranja
 - [ ] Fuentes corregidas y sincronizadas; si se cambian, re-ejecutar el fix de name tables (Manrope-ExtraLight bug del instancer) y re-instalar en LibreOffice (`Resources/fonts/truetype`)
 - [ ] Asset de mascota "modo Paper": variante con fondo navy `#06111F` o transparente, sin escena de partner (los assets actuales llevan la escena roja/neón incrustada, no apta para bandas de documentos) — pendiente de generar
-- [ ] Logo en alta resolución: isotipo SVG ✅ (medido del favicon, `pollux-star.svg`); **falta el wordmark vectorial original** — pedirlo al diseñador/fuente original (la reconstrucción con Michroma se descartó por infiel)
-- [ ] Color del isotipo corregido a `#D04503` (medido por píxel) — revisar usos web actuales que usen `#F05A24`
+- [x] Logo en alta resolución: isotipo y wordmark vectoriales oficiales (`pollux-star.svg`, `pollux-wordmark.svg`, extraídos del logofinal.svg de MKT/Logos)
+- [ ] Color del isotipo corregido a `#D45500` (valor del SVG oficial) — revisar usos web actuales que usen `#F05A24`
 - [ ] Versionado de marca: `CHANGELOG.md` en `pollux-brand` — cualquier cambio de token pasa por ahí
 
 ## 3. Distribución

@@ -75,8 +75,10 @@ PolluxData is named after Pollux, a white schnauzer (2011–2026) who accompanie
 
 ## Logo
 
-- File: `assets/logo/pollux-logo.png` (wordmark "P✦LLUX DATA", star replaces the O)
-- Isotipo: `assets/logo/pollux-favicon.png` (star only, 8-point nautical star with inscribed circle)
+- **Vector oficial**: `assets/logo/pollux-wordmark.svg` (extraído del logofinal.svg original — tipografía ATComputer + BankGothicCLtBT convertidas a contornos, estrella #D45500)
+- **Fuentes del logo**: ATComputer (P✦LLUX) y BankGothicCLtBT (DATA) — no reescribir el logo con otras tipografías; usar siempre el SVG
+- Variantes oficiales en `assets/logo/official/`: logofinal.svg/.pdf/.png (navy #002255 sobre blanco), logofinal_blanco.png (blanco), logofinal_bw.png (B/N), estrella.svg/.png
+- Isotipo digital: `assets/logo/pollux-star.svg` (estrella sola, transparente)
 - Clear space: minimum = height of the star around all sides
 - Minimum width: 120 px digital / 25 mm print
 - Preferred on dark backgrounds; on white, navy bands or soft gray are acceptable. Never place the logo on orange/red backgrounds
@@ -101,6 +103,19 @@ English prompt base for image generators:
 | `assets/mascot/pollux-oracle-aws.png` | Oracle + AWS, arms crossed, red/amber |
 | `assets/mascot/pollux-in-memoriam.png` | Tribute: from behind, watching the star |
 | `assets/mascot/pollux-office-lifestyle.jpg` | Daylight office lifestyle variant |
+
+### PolluxDog icon (flat, informal)
+
+Flat navy `#202B56` silhouette with 8-bit pixel eyes (NOT the CGI mascot, no Wayfarers). For informal contexts:
+
+| File | Content | Usage |
+|---|---|---|
+| `assets/mascot/polluxdog.png` | Head only, 88 px | Email signatures, inline icons. Never scale beyond ~150 px |
+| `assets/mascot/PolluxDog-DisenoSoloCara-Dog-Azul.png` | Head, full-res | Avatars, social profiles, stickers, informal document covers |
+| `assets/mascot/PolluxDog-DisenoCompleto-Dog-Azul.png` | Head + tagline "DOMINA LA BASE DE DATOS" | Marketing material only (posters, landing). Never as icon — tagline illegible at small sizes |
+| `assets/mascot/polluxdog_black.jpg` | Black variant | Dark/light prints where navy doesn't work |
+
+Rules: PolluxDog is welcome in email signatures, informal emails, social media and casual one-pagers. NEVER in formal documents (offers, proformas, assessments — those use the isotype star), never recolored, never rebuilt.
 
 ### Usage rules
 
