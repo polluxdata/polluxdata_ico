@@ -21,27 +21,27 @@ Lista de documentos que PolluxData debe tener como plantilla, por prioridad:
 
 ## 2. Infraestructura del repo
 
-- [ ] Generadores reales en `skills/pollux-docs/scripts/`: `make_offer.py`, `make_proforma.py` (DOCX→PDF con tokens de marca vía `palette.py`)
-- [ ] Incluir fuentes en `skills/pollux-brand/assets/fonts/` (Manrope, Inter — verificar licencia OFL para redistribución)
+- [x] Generadores reales en `skills/pollux-docs/scripts/`: oferta, proforma, presentación, ficha, assessment, soporte, caso de éxito, cierre y email (comparten `common.py`)
+- [x] Fuentes incluidas en `skills/pollux-brand/assets/fonts/` (Manrope, Inter, licencia OFL, name tables corregidas)
 - [x] Versiones SVG del logo: wordmark e isotipo oficiales en assets/logo/
-- [ ] Validación CI: lint de SKILL.md (frontmatter válido), JSON schemas, chequeo de que toda reference nueva está listada en el `SKILL.md` y en este roadmap
+- [x] Validación CI: `scripts/validate.py` + GitHub Action (frontmatter, JSONs, references listadas, demo flag, sintaxis)
 - [ ] Ampliar catálogo de la mascota: poses catalogadas con nombre (`pollux-thumbs-up`, `pollux-pointing`, `pollux-thinking`) y regla de uso de cada una
 - [ ] Decidir política de color en portadas con mascota: aceptar el rojo de la escena partner (Oracle) como acento justificado o regenerar escena en navy/naranja
 - [ ] Fuentes corregidas y sincronizadas; si se cambian, re-ejecutar el fix de name tables (Manrope-ExtraLight bug del instancer) y re-instalar en LibreOffice (`Resources/fonts/truetype`)
 - [ ] Asset de mascota "modo Paper": variante con fondo navy `#06111F` o transparente, sin escena de partner (los assets actuales llevan la escena roja/neón incrustada, no apta para bandas de documentos) — pendiente de generar
 - [x] Logo en alta resolución: isotipo y wordmark vectoriales oficiales (`pollux-star.svg`, `pollux-wordmark.svg`, extraídos del logofinal.svg de MKT/Logos)
 - [ ] Color del isotipo corregido a `#D45500` (valor del SVG oficial) — revisar usos web actuales que usen `#F05A24`
-- [ ] Versionado de marca: `CHANGELOG.md` en `pollux-brand` — cualquier cambio de token pasa por ahí
+- [x] Versionado de marca: `CHANGELOG.md` en `pollux-brand` — cualquier cambio de token pasa por ahí
 
 ## 3. Distribución
 
 - [ ] Servir descubrimiento estándar en `https://polluxdata.com/.well-known/skills/index.json` (copiar a `public/.well-known/skills/` en el repo de la web Astro y desplegar)
-- [ ] Registrar el repo como marketplace de plugin de Claude Code (`.claude-plugin/marketplace.json`)
+- [x] Marketplace de plugin de Claude Code (`.claude-plugin/marketplace.json` + plugin.json por skill)
 - [ ] Dar de alta el tap en Hermes: verificar `hermes skills tap add polluxdata/polluxdata_ico` end-to-end
 - [ ] Opcional: alta en skills.sh para descubrimiento público
 
 ## 4. Prueba de fuego
 
 - [ ] Generar una oferta real de prueba con un agente cargando los dos skills y validar: totales, fechas, tono, sin placeholders
-- [ ] Generar una presentación de prueba y contrastar con las escenas oficiales de `assets/mascot/`
-- [ ] Revisión visual de la familia de documentos: ¿se reconoce como una sola marca a primera vista?
+- [x] Presentación de prueba generada (PRES-OF-2026-042, 8 slides, APTA por visión)
+- [x] Revisión visual de la familia completa (9 documentos auditados por visión; reconocibles como una sola marca)
