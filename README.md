@@ -14,25 +14,39 @@ La idea: **1 skill de marca + N plantillas de documento**. Un solo diseño, cero
 ## Uso con Claude Code
 
 ```bash
-# desde este repo (o clonado en cualquier máquina)
-/plugin marketplace add <owner>/polluxdata-brand-skills
+# marketplace de plugin (requiere Claude Code 2.x)
+/plugin marketplace add polluxdata/polluxdata_ico
 ```
-
-O simplemente menciona los skills en tu sesión si están en `.claude/skills/` o instalados.
 
 ## Uso con Hermes Agent
 
 ```bash
-hermes skills tap add <owner>/polluxdata-brand-skills
-hermes skills install <owner>/polluxdata-brand-skills/pollux-brand
-hermes skills install <owner>/polluxdata-brand-skills/pollux-docs
+# descubrimiento público
+hermes skills tap add polluxdata/polluxdata_ico
+# instalación (también por URL directa de SKILL.md)
+hermes skills install polluxdata/polluxdata_ico/pollux-brand
+hermes skills install polluxdata/polluxdata_ico/pollux-docs
 ```
+
+Verificado end-to-end (2026-09-07): sesión real de Hermes carga `pollux-brand` y responde con los tokens correctos. Descubrimiento estándar también disponible en `https://polluxdata.com/.well-known/skills/index.json`.
 
 ## Ejemplo de flujo
 
 > "Genera una oferta para Acme Corp: migración a OCI, 2 fases, 12.400 € + IVA, válida 30 días."
 
 El agente carga `pollux-docs` (estructura de oferta) + `pollux-brand` (estilo Paper mode) y produce un PDF coherente con la marca, sin que nadie toque una plantilla.
+
+## Estado del proyecto
+
+Ver `ROADMAP.md` para el detalle completo. Resumen: **20/24 tareas cerradas** — 9 documentos generados y auditados, distribuciones verificadas (Claude Code, Hermes, web), vectores oficiales de marca. Abiertas: 2 generaciones de imágenes de mascota, decisión de color en portadas partner, MSA opcional.
+
+## Muestras
+
+La carpeta `muestras/` contiene PDFs/PPTX de demostración con datos 100% ficticios (marcados "MUESTRA · DATOS FICTICIOS"). Ver `muestras/README.md`. Los documentos reales no llevan la marca.
+
+## Integración con la web
+
+`HANDOFF-WEB.md` documenta el traspaso ejecutado al sitio (well-known, logo SVG, auditoría de color). La web consume los assets de este repo — no los duplica.
 
 ## Estructura
 
@@ -61,6 +75,7 @@ El agente carga `pollux-docs` (estructura de oferta) + `pollux-brand` (estilo Pa
 
 ## Mantenimiento
 
-- Cambios de marca → edita solo `skills/pollux-brand/SKILL.md` + `palette.json`
-- Nueva plantilla de documento → añade `skills/pollux-docs/references/<tipo>.md`
+- Cambios de marca → edita solo `skills/pollux-brand/SKILL.md` + `palette.json` y registra en `skills/pollux-brand/CHANGELOG.md`
+- Nueva plantilla de documento → añade `skills/pollux-docs/references/<tipo>.md`, listala en el SKILL.md y añádela al ROADMAP
 - Assets nuevos de la mascota → `skills/pollux-brand/assets/mascot/` con nombres descriptivos
+- Validar el repo tras cambios: `python3 scripts/validate.py` (también corre en CI)
