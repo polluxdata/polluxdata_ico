@@ -30,12 +30,12 @@ Lista de documentos que PolluxData debe tener como plantilla, por prioridad:
 - [ ] Fuentes corregidas y sincronizadas; si se cambian, re-ejecutar el fix de name tables (Manrope-ExtraLight bug del instancer) y re-instalar en LibreOffice (`Resources/fonts/truetype`)
 - [ ] Asset de mascota "modo Paper": variante con fondo navy `#06111F` o transparente, sin escena de partner (los assets actuales llevan la escena roja/neón incrustada, no apta para bandas de documentos) — pendiente de generar
 - [x] Logo en alta resolución: isotipo y wordmark vectoriales oficiales (`pollux-star.svg`, `pollux-wordmark.svg`, extraídos del logofinal.svg de MKT/Logos)
-- [ ] Color del isotipo corregido a `#D45500` (valor del SVG oficial) — revisar usos web actuales que usen `#F05A24`
+- [x] Color del isotipo corregido a `#D45500` — web auditada y migrada por el agente del sitio (verificado desde fuera: 0 usos de `#F05A24`, logo SVG idéntico al repo)
 - [x] Versionado de marca: `CHANGELOG.md` en `pollux-brand` — cualquier cambio de token pasa por ahí
 
 ## 3. Distribución
 
-- [ ] Servir descubrimiento estándar en `https://polluxdata.com/.well-known/skills/index.json` (copiar a `public/.well-known/skills/` en el repo de la web Astro y desplegar)
+- [x] Servir descubrimiento estándar en `https://polluxdata.com/.well-known/skills/index.json` — ejecutado por el agente de la web (HANDOFF-WEB.md), verificado 200/JSON válido
 - [x] Marketplace de plugin de Claude Code (`.claude-plugin/marketplace.json` + plugin.json por skill)
 - [x] Tap en Hermes verificado end-to-end (2026-09-07): `tap add` OK, instalación por URL OK (ambos skills en ~/.hermes/skills/), sesión real carga el skill y responde con los tokens correctos. Pendiente menor: la indexación del tap por búsqueda requiere un GITHUB_TOKEN válido — el de ~/.hermes/.env está comentado y caducado ("Bad credentials")
 - [ ] Opcional: alta en skills.sh para descubrimiento público
