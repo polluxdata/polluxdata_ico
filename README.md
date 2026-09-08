@@ -9,7 +9,7 @@ La idea: **1 skill de marca + N plantillas de documento**. Un solo diseño, cero
 | Skill | Qué hace |
 |---|---|
 | [`pollux-brand`](skills/pollux-brand/) | Look & feel: colores, tipografía, logo, mascota Pollux, tono de voz, modos visuales |
-| [`pollux-docs`](skills/pollux-docs/) | Estructura de documentos comerciales: oferta, proforma, presentación |
+| [`pollux-docs`](skills/pollux-docs/) | Estructura de 9 documentos comerciales: oferta, proforma, presentación, ficha de servicio, assessment, soporte, caso de éxito, cierre y email |
 
 ## Uso con Claude Code
 
