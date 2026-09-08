@@ -106,7 +106,7 @@ English prompt base for image generators:
 
 ### PolluxDog icon (flat, informal)
 
-Flat navy `#202B56` silhouette with 8-bit pixel eyes (NOT the CGI mascot, no Wayfarers). For informal contexts:
+Flat navy `#202B56` silhouette of the schnauzer head, front view: dropped triangular ears, spiky beard, and his signature **Wayfarer sunglasses rendered as pixel-art patches** at eye level (abstract pixel style, no frame detail). This is the informal Pollux — same character as the CGI mascot, different rendering. For informal contexts:
 
 | File | Content | Usage |
 |---|---|---|
